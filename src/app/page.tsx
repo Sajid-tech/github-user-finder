@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DarkAndLightBtn from "./components/DarkAndLightBtn";
+import SearchAndBtn from "./components/SearchAndBtn";
 
 export default function Home() {
   return (
@@ -9,12 +10,12 @@ export default function Home() {
         <section className="flex justify-between gap-3">
           <p className="text-xl font-semibold">GitFinder</p>
           <DarkAndLightBtn />
-
-          {/* search and main section  */}
-          <section>
-            {/* search btn  */}
-            <main></main>
-          </section>
+        </section>
+        {/* search and main section  */}
+        <section>
+          {/* search btn  */}
+          <SearchAndBtn />
+          <main></main>
         </section>
       </div>
     </div>
