@@ -7,5 +7,5 @@ type Props = {
 };
 
 export default function LayoutContainer({ children }: Props) {
-  return <ThemeProvider attribute="class">LayoutContainer</ThemeProvider>;
+  return <ThemeProvider attribute="class">{children}</ThemeProvider>;
 }
