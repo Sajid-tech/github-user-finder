@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import DarkAndLightBtn from "./components/DarkAndLightBtn";
 import SearchAndBtn from "./components/SearchAndBtn";
@@ -15,7 +16,7 @@ export default function Home() {
         <section>
           {/* search btn  */}
           <SearchAndBtn />
-          <main>search</main>
+          <main></main>
         </section>
       </div>
     </div>
