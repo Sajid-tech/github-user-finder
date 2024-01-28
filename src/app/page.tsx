@@ -12,7 +12,7 @@ export default function Home() {
           <p className="text-xl font-semibold">GitFinder</p>
           <DarkAndLightBtn />
         </section>
-        {/* search and main   */}
+        {/* search and main section  */}
         <section>
           {/* search btn  */}
           <SearchAndBtn />
