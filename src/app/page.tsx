@@ -2,6 +2,7 @@
 import Image from "next/image";
 import DarkAndLightBtn from "./components/DarkAndLightBtn";
 import SearchAndBtn from "./components/SearchAndBtn";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,10 +14,35 @@ export default function Home() {
           <DarkAndLightBtn />
         </section>
         {/* search and main section  */}
-        <section>
+        <section className="flex flex-col gap-6">
           {/* search btn  */}
           <SearchAndBtn />
-          <main></main>
+          <main className="flex w-full felx-col gap-5 rounded-lg bg-white dark:bg-slate-800 px-4 py-8 min-h-[200px]">
+            <section>
+              {/* user image  */}
+              <Image
+                src={"https://avatars.githubusercontent.com/u/80850448?v=4"}
+                alt=""
+                className=" h-20 w-20 rounded-full"
+                width={200}
+                height={200}
+              />
+              <section>
+                <div>
+                  {/* user name  */}
+                  <h1>Sajid Hussain</h1>
+                  {/* user id  */}
+                  <Link
+                    className="text-blue-500 hover:underline text-sm transition-all"
+                    href={"#"}
+                  >
+                    @Sajid-tech
+                  </Link>
+                </div>
+                {/* joined date  */}
+              </section>
+            </section>
+          </main>
         </section>
       </div>
     </div>
